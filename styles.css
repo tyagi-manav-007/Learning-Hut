@@ -1,0 +1,252 @@
+.nolap {
+  height: 700px;
+  width: 100%;
+  opacity: 0.5;
+  position: relative;
+}
+
+h3 {
+  font-family: sans-serif;
+}
+
+ul {
+  background-color: black;
+  list-style-type: none;
+  z-index: 1;
+  margin: 10px auto;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  float: left;
+  font-size: 20px;
+}
+
+li {
+  float: right;
+  padding-right: 70px;
+}
+
+.cont a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.cont a:hover {
+  background-color: aliceblue;
+  color: black;
+}
+
+.cont {
+  font-family: Arial;
+  padding: 0;
+}
+
+.text-block {
+  position: absolute;
+  top: 80px;
+  font-size: 200px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.lap {
+  position: absolute;
+  top: 120px;
+  right: 100px;
+}
+
+#about {
+  text-align: center;
+}
+
+.about-images {
+  position: relative;
+  height: 10rem;
+  width: 10rem;
+  margin: 3rem;
+}
+
+.about-text {
+  padding: 5rem;
+  margin: auto 5rem;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+}
+
+.about-table {
+  margin: 3rem auto;
+}
+
+.about-table a {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1rem;
+  margin: auto;
+  color: #A19882;
+}
+
+.about-table a:hover {
+  color: #171717;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+} */
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+ background-image: url(screenshots/5231%20(2).jpeg);
+} */
+
+body .container1 {
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 40px auto;
+  background-image: url("images/book.jpg");
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: overlay;
+}
+
+body .container1 .card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+    top:20px;
+    opacity: 1;
+}
+
+body .container1 .card:nth-child(1) .box .content a {
+  background: #2196f3;
+}
+
+body .container1 .card:nth-child(2) .box .content a {
+  background: #e91e63;
+}
+
+body .container1 .card:nth-child(3) .box .content a {
+  background: #23c186;
+}
+
+body .container1 .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #2a2b2f;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+body .container1 .card .box:hover {
+  transform: translateY(-50px);
+}
+
+body .container1 .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+body .container1 .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+body .container1 .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+body .container1 .card .box .content h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+body .container1 .card .box .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+body .container1 .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+body .container1 .card .box .content a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  color: #000;
+}
+
+#footer {
+  margin: auto;
+  text-align: center;
+  padding: 5rem;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #A19882;
+  padding: 0 2.5rem;
+  font-size: 2rem;
+}
+
+#footer a:hover {
+  color: #171717;
+}
+
+#footer p {
+  font-size: 1.2rem;
+  color: grey;
+  padding: 2rem 2rem 2rem 0;
+}
